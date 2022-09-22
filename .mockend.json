@@ -1,7 +1,13 @@
 {
   "User": {
-    "name": "test-name",
-    "username": "test-username",
-    "email": "email@example.com"
+    "name": {
+      "test-name"
+    },
+    "username": {
+      "test-username"
+    },
+    "email": {
+      "email@example.com"
+    }
   }
 }
