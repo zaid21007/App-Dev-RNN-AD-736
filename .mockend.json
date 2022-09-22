@@ -1,13 +1,35 @@
 {
-  "User": {
-    "name": {
-      "test-name"
+  "Post": {
+    "cover": {
+      "regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/270"
     },
-    "username": {
-      "test-username"
+    "title": {
+      "loremWords": {
+        "minLength": 5,
+        "maxLength": 20
+      }
     },
-    "email": {
-      "email@example.com"
+    "body": {
+      "loremParagraphs": {
+        "minLength": 10,
+        "maxLength": 100
+      }
+    },
+    "tag": {
+      "string": [
+        "one",
+        "two",
+        "three"
+      ]
+    },
+    "isDraft": {
+      "boolean": {}
+    },
+    "createdAt": {
+      "dateTime": {
+        "min": "2010-01-01T00:00:00Z",
+        "max": "2020-12-31T23:59:59Z"
+      }
     }
   }
 }
